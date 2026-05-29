@@ -1,0 +1,15 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  success:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pipeline OK
+        run: echo "Pipeline executado com sucesso!"
